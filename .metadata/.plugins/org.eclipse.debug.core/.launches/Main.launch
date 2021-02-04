@@ -13,5 +13,5 @@
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="application.Main"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="RandomGenerator"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="RandomGenerator"/>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="--module-path &quot;C:\Java Training\libs\javafx-sdk-11.0.2\lib&quot; &#13;&#10;--add-modules javafx.controls,javafx.fxml"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="--module-path &quot;C:\Java Training\libs\javafx-sdk-15.0.1\lib&quot; &#13;&#10;--add-modules javafx.controls,javafx.fxml"/>
 </launchConfiguration>
