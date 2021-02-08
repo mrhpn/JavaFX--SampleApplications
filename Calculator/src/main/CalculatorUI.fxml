@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="CENTER" focusTraversable="true" prefHeight="550.0" prefWidth="400.0" style="-fx-background-color: transparent;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="main.CalculatorController">
+<VBox alignment="CENTER" focusTraversable="true" prefHeight="550.0" prefWidth="400.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CalculatorController">
    <children>
       <Label fx:id="lblResult" alignment="CENTER_RIGHT" prefHeight="120.0" prefWidth="400.0" text="0">
          <font>
@@ -145,7 +144,7 @@
                   <Insets />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" style="-fx-border-radius: 10;" text="AC">
+            <Button mnemonicParsing="false" onAction="#processAC" prefHeight="85.0" prefWidth="85.0" style="-fx-border-radius: 10;" text="AC">
                <font>
                   <Font name="Dosis Medium" size="29.0" />
                </font>
@@ -153,7 +152,7 @@
                   <Insets />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" style="-fx-border-radius: 10;" text="=">
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="85.0" prefWidth="85.0" style="-fx-border-radius: 10;" text="=">
                <font>
                   <Font name="Dosis Medium" size="29.0" />
                </font>
