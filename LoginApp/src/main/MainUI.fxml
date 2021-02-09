@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #263238;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <top>
+      <Label alignment="CENTER" prefHeight="60.0" prefWidth="600.0" text="Main Section" textFill="#399461" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="300.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <CheckBox fx:id="cb1" mnemonicParsing="false" onAction="#processCheck" text="Burger 4000" textFill="#1fda19">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="cb2" mnemonicParsing="false" onAction="#processCheck" text="CocaCola 900" textFill="#1fda19">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="cb3" mnemonicParsing="false" onAction="#processCheck" text="FriedChicken 1500" textFill="#1fda19">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="cb4" mnemonicParsing="false" onAction="#processCheck" text="FriedRice 2000" textFill="#1fda19">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="cb5" mnemonicParsing="false" onAction="#processCheck" text="Pizza 6000" textFill="#1fda19">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="cb6" mnemonicParsing="false" onAction="#processCheck" text="FishCake 3000" textFill="#1fda19">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="lblItem" text="Item" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotal" text="Total" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblEmail" layoutX="108.0" layoutY="43.0" text="User Email" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRole" layoutX="128.0" layoutY="117.0" text="Role" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblGender" layoutX="116.0" layoutY="197.0" text="Gender" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
