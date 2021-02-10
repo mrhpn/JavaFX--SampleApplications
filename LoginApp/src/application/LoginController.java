@@ -1,10 +1,16 @@
 package application;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -12,12 +18,11 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class LoginController {
+public class LoginController implements Initializable {
 
 	@FXML
 	private TextField tfEmail;
@@ -40,7 +45,7 @@ public class LoginController {
 	@FXML
 	private ComboBox<String> cobRole;
 
-	private String gender;
+	private String gender = "Male";
 
 	@FXML
 	void processGender(ActionEvent event) {
@@ -78,6 +83,12 @@ public class LoginController {
 			lblStatus.setText("Incorrect email or password");
 		}
 
+	}
+
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		ObservableList<String> roleList = FXCollections.observableArrayList("Staff", "Manager", "Admin");
+		cobRole.setItems(roleList);
 	}
 
 }

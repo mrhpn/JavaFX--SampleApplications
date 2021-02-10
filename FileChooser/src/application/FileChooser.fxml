@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.FileChooserController">
+   <children>
+      <ListView fx:id="lvFile" layoutY="89.0" prefHeight="413.0" prefWidth="400.0" />
+      <Button layoutX="28.0" layoutY="53.0" mnemonicParsing="false" onAction="#processBrowseFile" text="Browse File" />
+      <Button layoutX="112.0" layoutY="53.0" mnemonicParsing="false" onAction="#processBrowseFiles" prefHeight="25.0" prefWidth="88.0" text="Browse Files" />
+      <Label layoutX="28.0" layoutY="14.0" text="File Chooser">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
