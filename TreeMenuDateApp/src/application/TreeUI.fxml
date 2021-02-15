@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.TreeController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TreeController">
    <children>
       <MenuBar prefHeight="25.0" prefWidth="600.0">
         <menus>
@@ -43,7 +42,7 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="200.0">
                <children>
-                  <TreeView fx:id="tvProject" prefHeight="400.0" prefWidth="296.0" />
+                  <TreeView fx:id="tvProject" onMouseClicked="#processTree" prefHeight="400.0" prefWidth="296.0" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
@@ -52,6 +51,11 @@
                   <Label fx:id="lblDate" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="95.0" text="Date">
                      <font>
                         <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTree" alignment="CENTER" contentDisplay="CENTER" layoutX="141.0" layoutY="280.0" text="...">
+                     <font>
+                        <Font size="23.0" />
                      </font>
                   </Label>
                </children>

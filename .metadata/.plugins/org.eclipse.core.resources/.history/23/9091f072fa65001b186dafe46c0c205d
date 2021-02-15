@@ -1,8 +1,0 @@
-package application;
-
-import javafx.scene.control.Label;
-
-public class RandomController {
-	@jdk.jfr.Label
-	private Label lblResult;
-}

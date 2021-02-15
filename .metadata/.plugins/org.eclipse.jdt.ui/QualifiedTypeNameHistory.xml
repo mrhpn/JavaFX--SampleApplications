@@ -7,7 +7,19 @@
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
     <fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
     <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+    <fullyQualifiedTypeName name="application.User"/>
+    <fullyQualifiedTypeName name="com.sun.javafx.image.IntToIntPixelConverter"/>
+    <fullyQualifiedTypeName name="javafx.collections.ListChangeListener"/>
+    <fullyQualifiedTypeName name="javafx.collections.FXCollections"/>
+    <fullyQualifiedTypeName name="javafx.stage.FileChooser"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="javafx.stage.FileChooser.ExtensionFilter"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javafx.collections.ObservableList"/>
     <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
     <fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
-    <fullyQualifiedTypeName name="application.User"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TreeView"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TreeItem"/>
+    <fullyQualifiedTypeName name="javafx.scene.image.ImageView"/>
+    <fullyQualifiedTypeName name="javafx.scene.image.Image"/>
 </qualifiedTypeNameHistroy>

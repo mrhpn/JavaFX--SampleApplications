@@ -3,6 +3,7 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,6 +13,7 @@ import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 public class TreeController implements Initializable {
 
@@ -23,15 +25,27 @@ public class TreeController implements Initializable {
 
 	@FXML
 	private Label lblDate;
+	
+	@FXML
+	private Label lblTree;
+	
+	@FXML
+	void processTree(MouseEvent event) {
+		if(event.getClickCount() == 2) {
+			TreeItem<String> selectedTreeItem = tvProject.getSelectionModel().getSelectedItem();
+			lblTree.setText(selectedTreeItem.getValue());			
+		}
+	}
 
 	@FXML
 	void processClose(ActionEvent event) {
-
+		Platform.exit();
+		System.exit(0);
 	}
 
 	@FXML
 	void processDate(ActionEvent event) {
-
+		lblDate.setText(dpDate.getValue().toString());
 	}
 
 	@SuppressWarnings("unchecked")
