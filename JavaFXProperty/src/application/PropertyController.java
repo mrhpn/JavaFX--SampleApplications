@@ -30,6 +30,7 @@ public class PropertyController implements Initializable {
 			public void changed(ObservableValue<? extends Object> observableValue, Object oldValue, Object newValue) {
 				lblResult.setText(String.valueOf(myNumber.getNumber()));
 				
+				System.out.println(oldValue);
 			}
 		});
 	}

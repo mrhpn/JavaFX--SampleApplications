@@ -1,0 +1,8 @@
+Bindings
+
+1) Bidirectional binding
+if property1 value has changed, property2 will also change.
+eg. volume slider, video seeker
+
+2) Unidirectional binding
+eg. download progress status bar

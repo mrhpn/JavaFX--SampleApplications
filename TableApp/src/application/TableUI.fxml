@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.TableController">
+   <children>
+      <TableView fx:id="tbEmployee" prefHeight="400.0" prefWidth="427.0">
+        <columns>
+          <TableColumn fx:id="employeeId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="employeeFName" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="employeeLName" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="employeeEmail" prefWidth="124.0" text="Email" />
+            <TableColumn fx:id="employeePhone" prefWidth="77.0" text="Phone" />
+        </columns>
+      </TableView>
+      <Slider fx:id="slider" layoutX="439.0" layoutY="116.0" />
+      <TextField fx:id="tfSlider" layoutX="435.0" layoutY="164.0" />
+   </children>
+</AnchorPane>
