@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.PieChartController">
+   <children>
+      <Label alignment="CENTER" layoutY="-6.0" prefHeight="41.0" prefWidth="500.0" text="Pie Chart Demo" />
+      <PieChart fx:id="piechart" layoutY="43.0" title="Hobby Chart for UT-YCC (2020-2021)" />
+      <Button layoutX="229.0" layoutY="461.0" mnemonicParsing="false" onAction="#processLoad" text="Load" />
+      <Label fx:id="lblValue" layoutX="24.0" layoutY="465.0" text="PieValue" />
+   </children>
+</AnchorPane>

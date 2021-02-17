@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.LieChartController">
+   <children>
+      <LineChart fx:id="lineChart" layoutY="40.0" title="Salary Chart">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="41.0" prefWidth="500.0" text="Line Chart Demo" />
+      <Button layoutX="228.0" layoutY="451.0" mnemonicParsing="false" onAction="#processLoad" text="Load" />
+      <Label fx:id="lblXValue" layoutX="27.0" layoutY="443.0" text="X-Value" />
+      <Label fx:id="lblYValue" layoutX="27.0" layoutY="467.0" text="Y-Value" />
+   </children>
+</AnchorPane>
